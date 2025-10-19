@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at top, #ffe6f0, #ffb3c6);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    z-index: 10;
+    top: 20vh;
+    padding: 0 10px;
+}
+
+h1 {
+    color: #e60073;
+    font-size: 3em;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #ff99cc; }
+    to { text-shadow: 0 0 30px #ff3399; }
+}
+
+.message {
+    font-size: 1.3em;
+    color: #660033;
+    margin-top: 20px;
+}
+
+/* ======= Khung câu hỏi ======= */
+.quiz {
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    padding: 30px;
+    display: inline-block;
+    max-width: 500px;
+    transition: all 0.5s ease;
+}
+
+#question-text {
+    color: #cc0066;
+    font-size: 1.4em;
+}
+
+button {
+    margin: 10px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1em;
+}
+
+#yesBtn {
+    background-color: #ff66a3;
+    color: white;
+}
+#noBtn {
+    background-color: #ffcce0;
+    color: #660033;
+}
+#nextBtn {
+    background-color: #ff99cc;
+    color: #fff;
+    display: none;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.response {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #cc0066;
+    font-weight: bold;
+    min-height: 50px;
+}
+
+/* ======= Canvas pháo hoa ======= */
+#fireworks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
